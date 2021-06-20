@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFQuestionnaire.FAuthorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WPFQuestionnaire"
+        mc:Ignorable="d"
+        Title="FAuthorization" Height="320" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border Margin="20" Padding="20" CornerRadius="30" Background="AliceBlue">
+            <StackPanel>
+                <TextBlock Text="Авторизация" FontSize="24" HorizontalAlignment="Center" FontFamily="Segoe Print" Foreground="Indigo"/>
+                <TextBox x:Name="fNameTb" materialDesign:HintAssist.Hint="Введите Имя" Margin="10,10,10,0" FontFamily="Segoe Print" Foreground="Indigo"/>
+                <TextBox x:Name="lNameTb" materialDesign:HintAssist.Hint="Введите Фамилию" Margin="10,10,10,0" FontFamily="Segoe Print" Foreground="Indigo"/>
+                <CheckBox x:Name="cb" Click="cb_Click" Content="Панель администратора" Margin="10,20,10,0" FontFamily="Segoe Print" Foreground="Indigo"/>
+            </StackPanel>
+        </Border>
+        <DockPanel VerticalAlignment="Bottom" Margin="0,0,0,35">
+            <Button x:Name="cancelBt" IsCancel="True" Click="cancelBt_Click" Content="Выйти" FontFamily="Segoe Print" Width="90" HorizontalAlignment="Left" Margin="50,0,0,0"/>
+            <Button x:Name="okBt" Click="okBt_Click" IsDefault="True" Content="Продолжить" FontFamily="Segoe Print" Width="130" HorizontalAlignment="Right" Margin="0,0,50,0"/>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPFQuestionnaire.Forms.FQuestionAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WPFQuestionnaire.Forms"
+        mc:Ignorable="d"
+        Title="FQuestionAdd" Height="300" Width="400">
+    <Grid>
+        <Border Margin="20" Padding="20" CornerRadius="30" Background="AliceBlue">
+            <StackPanel>
+                <TextBox x:Name="questTb" materialDesign:HintAssist.Hint="Введите вопрос" Margin="0,20,0,0" Foreground="Indigo" FontFamily="Segoe Print"/>
+                <TextBox x:Name="answerTb" materialDesign:HintAssist.Hint="Введите ответ" Margin="0,20,0,0" Foreground="Indigo" FontFamily="Segoe Print"/>
+            </StackPanel>
+        </Border>
+        <DockPanel VerticalAlignment="Bottom" Margin="0,0,0,50">
+            <Button x:Name="exitBt" IsCancel="True" HorizontalAlignment="Left" Margin="40,0,0,0" Content="Назад" Width="110" FontFamily="Segoe Print"/>
+            <Button x:Name="addBt" Click="addBt_Click" IsDefault="True" HorizontalAlignment="Right" Margin="0,0,40,0" Content="Добавить" Width="110" FontFamily="Segoe Print"/>
+        </DockPanel>
+    </Grid>
+</Window>

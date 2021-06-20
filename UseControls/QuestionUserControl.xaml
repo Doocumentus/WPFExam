@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="WPFQuestionnaire.UseControls.QuestionUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFQuestionnaire.UseControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="400">
+    <Grid>
+        <Border Margin="20" Padding="20" CornerRadius="30" Background="AliceBlue">
+            <StackPanel>
+                <TextBlock x:Name="questionTb" FontSize="14" Foreground="Indigo" FontFamily="Segoe Print"/>
+                <TextBox x:Name="answerTb" Margin="0,20,0,0" Foreground="Indigo" FontFamily="Segoe Print"/>
+            </StackPanel>
+        </Border>
+        <DockPanel VerticalAlignment="Bottom" Margin="0,0,0,50">
+            <Button x:Name="contBt" Click="contBt_Click" HorizontalAlignment="Center" Content="Следующий вопрос" Width="185" FontFamily="Segoe Print"/>
+        </DockPanel>
+    </Grid>
+</UserControl>
